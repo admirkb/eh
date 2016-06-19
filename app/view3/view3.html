@@ -1,0 +1,242 @@
+    <header>
+        <div style="text-align:center; background-color:transparent;text-decoration:underline; color:blue; font-size:22px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Some Functions</div>
+    </header>
+
+    <br />
+    <div >
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>getDeDuplicate()</h4>
+                    <h5>Enter a list of duplicates and remove from output</h5>
+                    <h5>e.g.  Sam, Mary, Joe, Jade, Jade, Mary, Sam</h5>
+                    <table>
+                        <tr>
+                            <td>
+                                <div>Input (comma separated)</div>
+                            </td>
+                            <td>
+                                <input ng-model="deDupIn" type="text" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div>Output: </div>
+                            </td>
+                            <td style="text-align:right">
+                                <div ng-bind="deDupOut"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="text-align:right">
+                                <button ng-click="deDupPlicate()">DeDuplicate</button>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+                <div class="col-md-4">
+                    <h4>getRotate()</h4>
+                    <h5>Enter a list of values and rotate n poistions</h5>
+                    <h5>e.g.  1,2,3,4,6 & 2 or Mary, Fred, Bill & 1</h5>
+                    <table>
+                        <tr>
+                            <td>
+                                <div>Rotate input (comma separated)</div>
+                            </td>
+                            <td>
+                                <input ng-model="rotateInput" type="text" />
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Input 2 (numeric)</div>
+                            </td>
+                            <td>
+                                <input ng-model="numericShift" type="text" />
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Rotate output: </div>
+                            </td>
+                            <td>
+                                <div ng-bind="rotateOutput"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="text-align:right">
+                                <button ng-click="rotate()">Rotate</button>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+                <div class="col-md-4">
+                    <h4>getLeastCommonMultiple()</h4>
+                    <h5>Enter a minimum and maximu range</h5>
+                    <h5>e.g. 1,5 or 3,4 or 1,13</h5>
+                    <table>
+                        <tr>
+                            <td>
+                                <div>leastCommonMultipleMin</div>
+                            </td>
+                            <td>
+                                <input ng-model="leastCommonMultipleMin" type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>leastCommonMultipleMax</div>
+                            </td>
+                            <td>
+                                <input ng-model="leastCommonMultipleMax" type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Output: </div>
+                            </td>
+                            <td>
+                                <div ng-bind="leastCommonMultipleMaxOutput"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="text-align:right">
+                                <button ng-click="leastCommonMultiple()">L.C.M.</button>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>getLeastCommonMultipleByArray()</h4>
+                    <h5>Enter an array of inputs</h5>
+                    <h5>e.g. 3,4,7 </h5>
+                    <table>
+                        <tr>
+                            <td>
+                                <div>Input (comma separated)</div>
+                            </td>
+                            <td>
+                                <input ng-model="leastCommonMultipleArray" type="text" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div>Output: </div>
+                            </td>
+                            <td style="text-align:right">
+                                <div ng-bind="leastCommonMultipleArrayOutput"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="text-align:right">
+                                <button ng-click="leastCommonMultipleByArray()">L.C.M. by Array</button>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+                <div class="col-md-4">
+                    <h4>find_char_NN()</h4>
+                    <h5>Find characters in strings order NN</h5>
+                    <h5>e.g. Luton & Wimbledon or Cambridge & Humber Bridge </h5>
+                    <table>
+                        <tr>
+                            <td>
+                                <div>Input #1</div>
+                            </td>
+                            <td>
+                                <input ng-model="findCharsNNInput1" type="text" />
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Input #2</div>
+                            </td>
+                            <td>
+                                <input ng-model="findCharsNNInput2" type="text" />
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>findCharsNNOutput output: </div>
+                            </td>
+                            <td>
+                                <div ng-bind="findCharsNNOutput"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="text-align:right">
+                                <button ng-click="findCharsNN()">findCharsNN</button>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+                <div class="col-md-4">
+                    <h4>find_char_N()</h4>
+                    <h5>Find characters in strings order N</h5>
+                    <h5>e.g.  Luton & Liverpool </h5>
+                    <table>
+                        <tr>
+                            <td>
+                                <div>Input #1</div>
+                            </td>
+                            <td>
+                                <input ng-model="findCharsNInput1" type="text" />
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Input #2</div>
+                            </td>
+                            <td>
+                                <input ng-model="findCharsNInput2" type="text" />
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>findCharsNOutput output: </div>
+                            </td>
+                            <td>
+                                <div ng-bind="findCharsNOutput"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="text-align:right">
+                                <button ng-click="findCharsN()">findCharsN</button>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
