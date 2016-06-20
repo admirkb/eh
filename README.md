@@ -23,3 +23,16 @@ For Angular 2 latest and using Typescript head over to: https://github.com/admir
 <h4>Karma tests using Jasmine can be found in the file:</h4>
 
 app/view3/view3_test.js
+
+<h4>Instructions</h4>
+
+
+Download zip
+
+cd to extracted files folder
+
+npm install
+
+npm start for webpages (runs @ http://localhost:8000)
+
+npm test for karma test suite. Should see 15 tests passing. n.b. Some of the original seed tests run.
